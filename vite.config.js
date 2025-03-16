@@ -6,16 +6,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://freetestapi.com/api/v1',
-        changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-  },
+  base:'/projectMovie/',
   build: {
     outDir: 'build'  // Build çıktıları "build" klasörüne konulacak
   }
