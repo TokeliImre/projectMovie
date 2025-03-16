@@ -4,9 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
-    tailwindcss(),
+    tailwindcss(),[react()]
   ],
-  base:'/projectMovie/',
+
+  base:'./',
   build: {
     outDir: 'build'  // Build çıktıları "build" klasörüne konulacak
   }
