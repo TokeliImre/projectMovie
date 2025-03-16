@@ -16,5 +16,7 @@ export default defineConfig({
       },
     },
   },
-  
+  build: {
+    outDir: 'build'  // Build çıktıları "build" klasörüne konulacak
+  }
 });
