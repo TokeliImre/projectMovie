@@ -16,4 +16,7 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    outDir: 'build' // Çıktıyı "build" klasörüne yönlendir
+  }
 });
